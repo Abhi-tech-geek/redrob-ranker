@@ -4,15 +4,15 @@
 # ============================================================================
 # Team identity
 # ============================================================================
-team_name: "YOUR_TEAM_NAME"
+team_name: "Abhinova"
 
 primary_contact:
-  name: "YOUR FULL NAME"
+  name: "Abhinav Saxena"
   email: "abhinav.ujjwal98@gmail.com"
-  phone: "+91-XXXXXXXXXX"
+  phone: "+91-XXXXXXXXXX"        # <-- add your phone before submitting
 
 team_members:
-  - name: "YOUR FULL NAME"
+  - name: "Abhinav Saxena"
     email: "abhinav.ujjwal98@gmail.com"
     role: "Team Lead / ML Engineer"
   # add more members if any
