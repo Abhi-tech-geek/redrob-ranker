@@ -1,0 +1,5 @@
+# OPTIONAL — only needed to run precompute_embeddings.py for the embedding
+# booster. The default rank.py works without these.
+sentence-transformers>=2.2
+torch>=2.0
+numpy>=1.24

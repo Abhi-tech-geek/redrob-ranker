@@ -1,0 +1,16 @@
+# Data — do NOT commit the 465 MB candidate pool
+candidates.jsonl
+candidates.jsonl.gz
+*.jsonl
+!sample_*.jsonl
+
+# Generated artifacts / outputs
+artifacts/
+audit_top100.json
+_test_*
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.venv/
+venv/
+.DS_Store

@@ -1,0 +1,85 @@
+# Redrob Hackathon — Submission Metadata
+# Fill in the CAPITALISED placeholders before you submit on the portal.
+
+# ============================================================================
+# Team identity
+# ============================================================================
+team_name: "YOUR_TEAM_NAME"
+
+primary_contact:
+  name: "YOUR FULL NAME"
+  email: "abhinav.ujjwal98@gmail.com"
+  phone: "+91-XXXXXXXXXX"
+
+team_members:
+  - name: "YOUR FULL NAME"
+    email: "abhinav.ujjwal98@gmail.com"
+    role: "Team Lead / ML Engineer"
+  # add more members if any
+
+# ============================================================================
+# Code and reproducibility
+# ============================================================================
+github_repo: "https://github.com/YOUR_USERNAME/redrob-ranker"
+
+sandbox_link: "https://YOUR_USERNAME-redrob-ranker.streamlit.app"
+# Streamlit Community Cloud (free). See README "Sandbox" section.
+
+reproduce_command: "python rank.py --candidates ./candidates.jsonl --out ./submission.csv"
+# Runs end-to-end in ~2 minutes on CPU with 16 GB RAM and no network.
+
+# ============================================================================
+# Compute environment
+# ============================================================================
+compute:
+  platform: "Local Windows 11 laptop"
+  cpu_cores: 8
+  ram_gb: 16
+  python_version: "3.14"
+  os: "Windows 11"
+  uses_gpu_for_inference: false
+  has_network_during_ranking: false
+  pre_computation_required: false          # TF-IDF default needs no precompute
+  pre_computation_time_minutes: 0          # (optional embedding booster: ~10 min offline)
+
+# ============================================================================
+# AI tools declaration  (honest; not penalised)
+# ============================================================================
+ai_tools_used:
+  - "Claude"        # architecture, code review, scaffolding
+
+ai_usage_summary: |
+  Used Claude (Claude Code) to help design the scoring architecture, scaffold
+  the Python modules, and review code. All design decisions (feature weights,
+  honeypot heuristics, anti-keyword-stuffing logic) were reviewed and tuned by
+  the team against the dataset. No candidate data was sent to any hosted LLM,
+  and the ranking step itself makes zero network/LLM calls.
+
+# ============================================================================
+# Approach summary
+# ============================================================================
+methodology_summary: |
+  JD-adaptive, fully interpretable CPU ranker. The JD is parsed into a target
+  role-domain vector (over ~18 occupational domains), an experience band, target
+  locations, salient keywords and any excluded specialties from a "do NOT want"
+  section. Six weighted base components — role-domain fit (candidate-vs-JD
+  domain cosine, the dominant anti-keyword-stuffer signal), TF-IDF semantic
+  match on the candidate's prose (not the skills list), JD-keyword evidence,
+  experience-band fit, product-vs-services history, and location — are combined
+  and then modulated by multiplicative gates: behavioral availability (response
+  rate, recency, notice), verified corroboration (assessment scores + GitHub),
+  a keyword-stuffing penalty, an excluded-specialty penalty, a job-hopping
+  penalty, and an internal-consistency / honeypot gate that pushes impossible
+  profiles out of the top 100. Because nothing is hard-coded to one role, the
+  same code ranks any JD. Runs the full 100K pool in ~2 minutes on CPU, no GPU,
+  no network.
+
+# ============================================================================
+# Declarations
+# ============================================================================
+declarations:
+  read_submission_spec: true
+  code_is_original_work: true
+  no_collusion: true
+  honeypot_check_done: true
+  reproduction_tested: true

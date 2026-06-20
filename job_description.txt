@@ -1,0 +1,53 @@
+Job Description: Senior AI Engineer — Founding Team
+Company: Redrob AI (Series A AI-native talent intelligence platform)
+Location: Pune/Noida, India (Hybrid — flexible cadence) | Open to relocation candidates from Tier-1 Indian cities
+Employment Type: Full-time
+Experience Required: 5–9 years
+
+We are building a new AI Engineering org from scratch. We need deep technical depth in
+modern ML systems — embeddings, retrieval, ranking, LLMs, fine-tuning — combined with a
+scrappy product-engineering attitude that ships a working ranker in a week.
+
+You would own the intelligence layer of the product: the ranking, retrieval, and matching
+systems that decide what recruiters see when they search for candidates. First 90 days:
+audit the current BM25 + rule-based scoring, ship a v2 ranking system using embeddings,
+hybrid retrieval and LLM-based re-ranking, then build the evaluation infrastructure
+(offline benchmarks, online A/B testing, recruiter-feedback loops).
+
+Things you absolutely need:
+- Production experience with embeddings-based retrieval systems (sentence-transformers,
+  OpenAI embeddings, BGE, E5, or similar) deployed to real users. Embedding drift, index
+  refresh, retrieval-quality regression in production.
+- Production experience with vector databases or hybrid search infrastructure — Pinecone,
+  Weaviate, Qdrant, Milvus, OpenSearch, Elasticsearch, FAISS, or similar.
+- Strong Python and code quality.
+- Hands-on experience designing evaluation frameworks for ranking systems — NDCG, MRR,
+  MAP, offline-to-online correlation, A/B test interpretation.
+
+Nice to have: LLM fine-tuning (LoRA, QLoRA, PEFT), learning-to-rank (XGBoost or neural),
+HR-tech / recruiting / marketplace products, distributed systems and large-scale
+inference optimization, open-source contributions in AI/ML.
+
+We explicitly do NOT want:
+- Title-chasers who switch companies every 1.5 years for "Senior -> Staff -> Principal".
+- Framework enthusiasts whose work is LangChain tutorials and hot-framework demos.
+- People who have only ever worked at consulting firms (TCS, Infosys, Wipro, Accenture,
+  Cognizant, Capgemini, etc.) their entire career.
+- People whose primary expertise is computer vision, speech, or robotics without
+  significant NLP/IR exposure.
+- Pure research environments (academic / research-only) without production deployment.
+- "AI experience" that is only recent (<12 months) LangChain-calling-OpenAI work.
+- Senior engineers who have not written production code in the last 18 months.
+
+The ideal candidate: 6-8 years total experience, of which 4-5 are in applied ML/AI roles
+at product companies (not pure services). Has shipped at least one end-to-end ranking,
+search, or recommendation system to real users at meaningful scale. Has strong opinions
+about retrieval (hybrid vs dense), evaluation (offline vs online), and LLM integration.
+Located in or willing to relocate to Noida or Pune. Active on the platform so we can
+actually talk to them.
+
+The right answer is NOT the candidate with the most AI keywords in their skills list. A
+Marketing Manager with a perfect AI skill list is not a fit; a candidate who built a
+recommendation system at a product company is, even without the buzzwords. Behavioral
+availability matters: a perfect-on-paper candidate who has not logged in for 6 months with
+a 5% recruiter response rate is, for hiring purposes, not actually available.
