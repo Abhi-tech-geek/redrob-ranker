@@ -462,7 +462,7 @@ def build():
     d.c.drawString(90, 140, "Reads careers, not keywords · CPU-only · fully reproducible")
     d.c.setFillColor(MUTED)
     d.c.setFont("Helvetica", 16)
-    d.c.drawString(90, 100, "GitHub: github.com/YOUR_USERNAME/redrob-ranker   ·   Sandbox: Streamlit Community Cloud")
+    d.c.drawString(90, 100, "GitHub: github.com/Abhi-tech-geek/redrob-ranker   ·   Sandbox: Streamlit Community Cloud")
     d.page()
 
     d.save()

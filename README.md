@@ -40,7 +40,10 @@ code.
 ## TL;DR — reproduce the submission
 
 ```bash
+git clone https://github.com/Abhi-tech-geek/redrob-ranker.git
+cd redrob-ranker
 pip install -r requirements.txt
+# place candidates.jsonl next to rank.py (it is not committed — 465 MB)
 python rank.py --candidates ./candidates.jsonl --out ./submission.csv
 ```
 

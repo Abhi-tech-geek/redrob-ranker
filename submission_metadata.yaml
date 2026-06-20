@@ -20,7 +20,7 @@ team_members:
 # ============================================================================
 # Code and reproducibility
 # ============================================================================
-github_repo: "https://github.com/YOUR_USERNAME/redrob-ranker"
+github_repo: "https://github.com/Abhi-tech-geek/redrob-ranker"
 
 sandbox_link: "https://YOUR_USERNAME-redrob-ranker.streamlit.app"
 # Streamlit Community Cloud (free). See README "Sandbox" section.
